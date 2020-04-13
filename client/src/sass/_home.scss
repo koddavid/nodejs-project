@@ -1,0 +1,44 @@
+.content-area {
+  .topHeader {
+    display: flex;
+
+    .topLeft {
+      background: $topLeftBG;
+      display: inline-block;
+      width: 50%;
+      min-height: 500px;
+      height: calc(100vh - 49px);
+      vertical-align: top;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      h1{
+        font-family: $displayFont;
+        font-size: 3rem;
+        color: white;
+      }
+    }
+
+    .topRight {
+      display: inline-block;
+      padding: 20px;
+      background: $topRightBG;
+      width: 50%;
+      min-height: 500px;
+      height: calc(100vh - 49px);
+      vertical-align: top;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    img{
+      width: 100%;
+      max-width: 473px;
+    }
+  }
+}
+
+.content-area {
+  padding-top: 49px;
+}
