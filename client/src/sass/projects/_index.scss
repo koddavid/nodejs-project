@@ -11,7 +11,7 @@
       z-index: 1;
       &:hover{
         .inside{
-          transform: translate(0, 100%);
+          transform: translate(0, 0%);
         }
       }
       .inside{
@@ -19,13 +19,13 @@
         background: rgba(34, 37, 100, .9);
         position: absolute;
         z-index: 1;
-        height: 50%;
+        height: 100%;
         transform: translate(0, 200%);
         color: white;
         display: flex;
         align-items: center;
         justify-content: center;
-        transition: all .5s ease-in-out;
+        transition: all .2s ease-in-out;
 
         h4{
           font-family: $displayFont;
