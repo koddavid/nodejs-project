@@ -7,4 +7,8 @@ block content
   div(class="container about-page")    
     div(class="content-box")
       div(class="row")
-        h1=pagetitle
+        h1=pagecontent.title
+        h1=pagecontent.time
+        each tag in pagecontent.tags
+          div(class="pill") #{tag}
+          

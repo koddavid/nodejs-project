@@ -60,26 +60,26 @@ projectsController.store = (req, res) => {
 
 projectsController.show = (req, res) => {
   var currentTitle = req.params.title;
-  var pagetitle="default";
+  var pagecontent="default";
 
   function searchObject(a){
     var i;
     for (i = 0;i<projects.length; i++) {
       if (a == projects[i].slug) {
-         pagetitle=projects[i].title
-         console.log(pagetitle)
-         return pagetitle
+         pagecontent=projects[i]
+         console.log(pagecontent)
+         return pagecontent
 
       }
     }
   }
-  pagetitle = searchObject(currentTitle);
+  pagecontent = searchObject(currentTitle);
 
 
   res.render('projects/show', {
     projects: projects,
     currentTitle: currentTitle,
-    pagetitle: pagetitle
+    pagecontent: pagecontent
 
   })
 }
