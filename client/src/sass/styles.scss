@@ -8,6 +8,7 @@ html {
 }
 
 body {
+  box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
 
   a {
@@ -582,8 +583,7 @@ body {
     }
 
     .imgScoala {
-      display: inline-block;
-      text-align: right;
+      // display: inline-block;
     }
   }
 
@@ -695,50 +695,51 @@ body {
           width: 570px;
           cursor: pointer;
         }
-      }
+        .text-gold {
+          height: 317px;
+          width: 522px;
+          border-radius: 7px;
+          position: absolute;
+          top: 0;
+          color: white;
+          z-index: 100;
+          padding: 1.5rem;
+          background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0px, transparent);
 
-      .text-gold {
-        height: 364px;
-        width: 570px;
-        border-radius: 7px;
-        position: absolute;
-        top: 0;
-        color: white;
-        z-index: 100;
-        padding: 1.5rem;
-        background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0px, transparent);
-
-        h5 {
-          font-size: 1.5rem;
-          font-weight: 600;
-          margin-bottom: 1.5rem;
-        }
-
-        p {
-          text-align: center;
-          line-height: 1.5rem;
-        }
-
-        div {
-          display: inline-block;
-          padding-bottom: 0.2rem;
-          border-bottom: 2px solid transparent;
-          transition: all ease-in-out 0.25s;
-          a:hover{
-            border-bottom: 2px solid white;
+          h5 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
           }
 
-          a {
-            color: white;
+          p {
+            text-align: center;
+            line-height: 1.5rem;
           }
-        }
 
-        .text-gold:hover {
           div {
-            border-bottom: 2px solid white;
+            display: inline-block;
+            padding-bottom: 0.2rem;
+            border-bottom: 2px solid transparent;
+            transition: all ease-in-out 0.25s;
+            a:hover{
+              border-bottom: 2px solid white;
+            }
+
+            a {
+              color: white;
+            }
+          }
+
+          .text-gold:hover {
+            div {
+              border-bottom: 2px solid white;
+            }
           }
         }
       }
+
+
     }
   }
 }
