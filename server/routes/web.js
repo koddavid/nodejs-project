@@ -3,6 +3,10 @@ const router = express.Router()
 const pagesController = require('../controllers/pagesController')
 const projectsController = require('../controllers/projectsController')
 const blogController = require('../controllers/blogController')
+const bcrController = require('../controllers/bcrController')
+
+//BCR page
+router.get('/bcr', bcrController.home)
 
 // PAGES=====================================================
 router.get('/', pagesController.homePage)
