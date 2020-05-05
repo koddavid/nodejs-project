@@ -60,7 +60,7 @@ projectsController.store = (req, res) => {
 
 projectsController.show = (req, res) => {
   var currentTitle = req.params.title;
-  var pagecontent="default";
+  var pagecontent={};
 
   function searchObject(a){
     var i;
