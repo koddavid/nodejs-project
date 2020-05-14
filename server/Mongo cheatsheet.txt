@@ -1,0 +1,19 @@
+
+Create database
+use "write the name of database"
+ex.
+use users
+use cars
+
+Create collection
+db.createCollection('name of collection');
+
+Show collections
+show collections
+
+Insert data in collections
+db.articles.insert({title:"Article One",author:"Kodori David", body:"This is article one"});
+
+Show data from collections
+db.articles.find();
+db.articles.find().pretty();

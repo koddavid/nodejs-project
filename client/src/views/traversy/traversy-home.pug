@@ -1,0 +1,13 @@
+extends ../layouts/main.pug
+
+block title
+  title #{title}
+
+block content
+  div(class="container traversy-home")
+    h1 #{title}
+    each article in articles
+      div(class="content-box")
+        h1= article.title
+        h5 Author: #{article.author}
+        h4= article.body

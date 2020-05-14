@@ -4,6 +4,7 @@ const pagesController = require('../controllers/pagesController')
 const projectsController = require('../controllers/projectsController')
 const blogController = require('../controllers/blogController')
 const bcrController = require('../controllers/bcrController')
+const traversyController = require('../controllers/traversyController')
 
 //BCR page
 router.get('/bcr', bcrController.home)
@@ -14,6 +15,14 @@ router.get('/', pagesController.homePage)
 router.get('/about', pagesController.about)
 
 router.get('/contact', pagesController.contact)
+
+//Traversy Media node course
+
+router.get('/traversy', traversyController.home)
+
+router.get('/traversy/add', traversyController.add)
+
+router.post('/traversy/add', traversyController.submit)
 
 // PROJECTS=====================================================
 router.get('/projects', projectsController.index)

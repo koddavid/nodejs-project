@@ -1,0 +1,20 @@
+extends ../layouts/main.pug
+
+block title
+  title #{title}
+
+block content
+  div(class="container traversy-add_article")
+    h1 #{title}
+    form(method='POST', action='/traversy/add')
+      #form-group
+        label Title:
+        input.form-control(name='title', type='text')
+      #form-group
+        label Author:
+        input.form-control(name='author', type='text')
+      #form-group
+        label Body:
+        textarea.form-control(name='body')
+      input.btn(type='submit', value='Submit')
+    
