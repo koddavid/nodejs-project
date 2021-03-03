@@ -19,7 +19,7 @@
     "gsap": "^3.2.6",
     "lodash": "^4.17.15",
     "mongoose": "^5.9.13",
-    "pug": "^2.0.4",
+    "pug": "^3.0.1",
     "react": "^16.13.1"
   },
   "devDependencies": {
